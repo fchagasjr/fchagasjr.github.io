@@ -1,0 +1,8 @@
+- name: About Me
+  link: /
+- name: Skills
+  link: /skills.html
+- name: Education
+  link: /education.html
+- name: Work Experience
+  link: /work.html

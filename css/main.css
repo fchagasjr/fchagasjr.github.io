@@ -1,0 +1,45 @@
+body {
+  background-color: lavender;
+  color: navy;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #483248; /* Eggplant */
+}
+
+/* Main Div Elements */
+.greetings {
+  display: block;
+  text-align: center
+}
+.navbar {
+  display: block;
+}
+.content {
+  display: block;
+}
+.footer {
+  display: block;
+}
+
+/* Greetings */
+.greetings-img {
+  width: 20vw;
+  border-radius: 50%;
+}
+
+/* Navbar */
+
+.navbar-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar-item {
+  display: inline-block;
+  padding: 2vw;
+ }
+.navbar-link {
+  display: block;
+  text-decoration: none;
+}

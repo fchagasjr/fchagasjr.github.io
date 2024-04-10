@@ -1,0 +1,25 @@
+---
+title: fchagasjr's Dev Journal
+layout: default
+---
+
+<h2>My Developer Journal</h2>
+
+<p>Welcome to my developer journal, where I share insights and solutions I've discovered while navigating the ever-evolving landscape of software development. This space serves as a repository for my personal notes, made public for the benefit of fellow developers facing similar challenges.</p>
+
+<h2>About</h2>
+
+<p>This isn't your typical collection of polished, formal articles. Instead, think of it as a peek into my developer journey—a mix of technical musings, problem-solving adventures, and solutions to peculiar coding conundrums.</p>
+
+<h2>Latest Entries</h2>
+
+<p>Explore my latest findings and solutions:</p>
+
+<ul>
+  {% for post in site.posts %}
+  <li>
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    {{ post.excerpt }}
+  </li>
+  {% endfor %}
+</ul>

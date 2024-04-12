@@ -32,9 +32,11 @@ h1, h2, h3, h4, h5, h6 {
 /* Navbar */
 
 .navbar-menu {
+  display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  justify-content: space-around;
 }
 .navbar-item {
   display: inline-block;
@@ -42,5 +44,8 @@ h1, h2, h3, h4, h5, h6 {
  }
 .navbar-link {
   display: block;
+  color: #483248; /* Eggplant */
   text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 1.5px 1.5px rgba(70,50,72,0.3);
 }

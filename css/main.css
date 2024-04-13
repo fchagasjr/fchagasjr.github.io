@@ -6,6 +6,16 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: #483248; /* Eggplant */
 }
+.highlight .highlight{
+  background-color: #1e151e;  /* Dark Eggplant */
+  border-style: groove;
+  border-width: 0.5vw;
+  border-color: #483248; /* Eggplant */
+  color: white;
+  display: block;
+  margin: 1vw ;
+  padding: 1vw;
+}
 
 /* Main Div Elements */
 .greetings {
@@ -48,4 +58,17 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   text-transform: uppercase;
   text-shadow: 1.5px 1.5px rgba(70,50,72,0.3);
+}
+
+/* Code Blocks */
+
+code .highlight .highlight{
+  background-color: #1e151e;  /* Dark Eggplant */
+  border-style: groove;
+  border-width: 0.5vw;
+  border-color: #483248; /* Eggplant */
+  color: white;
+  display: block;
+  margin: 1vw ;
+  padding: 1vw;
 }

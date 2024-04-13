@@ -12,7 +12,7 @@ Easier said than done, I came to realize that doing that on Sinatra with Rack::T
 
 Below is a condensed version of the files I had in the project, only the necessary for understanding parts were kept, so we can focus on what it matters.
 
-***app.rb***
+**app.rb**
   ```ruby
   require 'sinatra'
   require 'sinatra/activerecord'
@@ -43,7 +43,7 @@ Below is a condensed version of the files I had in the project, only the necessa
     end
   ```
 
-***helpers/session_helpers.rb***
+**helpers/session_helpers.rb**
   ```ruby
   module SessionHelpers
     def login(user)
@@ -56,7 +56,7 @@ Below is a condensed version of the files I had in the project, only the necessa
   end
   ```
 
-***test/test_helper.rb***
+**test/test_helper.rb**
   ```ruby
   ENV['APP_ENV'] = 'test'
 
@@ -74,7 +74,7 @@ Below is a condensed version of the files I had in the project, only the necessa
   ```
 
 Using fixtures (Maybe a topic to cover next?!) I created the user FOO. Below is a basic exmaple of a test to check for the login/logout functionalities using that user credentials:
-***test/views_test.rb***
+**test/views_test.rb**
   ```ruby
   require_relative 'test_helper'
 
@@ -106,7 +106,7 @@ Passing the value directly to the session hash is also not an option, since the 
 So the only way to accomplish that is creating new methods accessible on the test environment that can populate this mock session with the values we want.
 In this case, I created this methods on the `test_helper.rb`. Below is the updated version of it:
 
-***test/test_helper.rb***
+**test/test_helper.rb**
   ```ruby
   ENV['APP_ENV'] = 'test'
 
@@ -134,6 +134,6 @@ This solution allows the passing of the user information to the mock session wit
 Of course, your application might require a customized version of this example for better addressing your needs, but I hope that can be a good starter.
 Happy coding!
 
-References:
-- [TESTING SINATRA WITH RACK::TEST](https://sinatrarb.com/testing.html)
-- [Method: Rack::Test::Session#env](https://www.rubydoc.info/github/brynary/rack-test/Rack%2FTest%2FSession:env)
+***References:***
+- [*TESTING SINATRA WITH RACK::TEST*](https://sinatrarb.com/testing.html)
+- [*Method: Rack::Test::Session#env*](https://www.rubydoc.info/github/brynary/rack-test/Rack%2FTest%2FSession:env)
